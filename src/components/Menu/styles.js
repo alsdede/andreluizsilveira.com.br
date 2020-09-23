@@ -10,7 +10,7 @@ export const Menu = styled.div`
     font-size:var(--large);
     text-decoration:none;
     text-align:center;
-    margin-left:1.2rem;
+    margin-left:2rem;
     transition: color 0.3s;
 
     &.active{
@@ -29,6 +29,8 @@ export const Menu = styled.div`
         border-radius:1;
         background-color:var(--highlight);
         animation: hoverAnimation 0.3s forwards;
+
+       
       }
       @keyframes hoverAnimation {
         from {

@@ -4,7 +4,14 @@ module.exports = {
     position:'Desenvolvedor Front-end',
     description: `Front-end e outras coisas legais`,
     author: `@alsdede`,
-    siteUrl:'https://andreluizsilveira.com.br'
+    siteUrl:'https://andreluizsilveira.com.br',
+    social: {
+      twitter: `alsdede`,
+      twitterLink: `https://twitter.com/alsdede`,
+      linkedinLink: `https://www.linkedin.com/in/alsdede/`,
+      githubLink: `https://github.com/alsdede`,
+      youtubeLink: `https://www.youtube.com/c/alsdede`,
+    },
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

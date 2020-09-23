@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
-
-export const HeaderWrapper = styled.header`
-  display:block;
- 
+export const HeaderWrapper = styled.header.attrs({
+  role: 'banner',
+})`
+  display:block; 
   position:fixed;
+  
   left:0;
   right:0;
   top:0;
@@ -17,6 +18,10 @@ export const HeaderMain = styled.div`
   align-items:center;
   height:6.4rem;
   justify-content:space-between;
+  > a {
+  text-decoration:none;
+
+  }
 `;
 
 export const BrandContainer = styled.div`
@@ -30,5 +35,6 @@ export const BrandTitle = styled.h1`
   font-size:var(--large);
   letter-spacing:0.5;
   text-transform:lowercase;
-  margin-left:0.8rem;
+  margin-left:1.4rem;
+ 
 `;

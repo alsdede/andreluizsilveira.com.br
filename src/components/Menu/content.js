@@ -1,7 +1,7 @@
 const menuLinks = [
   {
     label:'blog',
-    url:'/blog/'
+    url:'/'
   },
   {
     label:'cursos',

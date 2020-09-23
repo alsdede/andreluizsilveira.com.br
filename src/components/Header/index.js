@@ -1,4 +1,5 @@
 import React from 'react'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import Avatar from '../Avatar'
 import Container from '../Container'
 import Menu from '../Menu'
@@ -9,10 +10,19 @@ const Header = () => {
     <S.HeaderWrapper>
         <Container>
       <S.HeaderMain>
+        <AniLink
+        cover
+        bg={"var(--background)"}
+        direction="down"
+        duration={1}
+        to="/"
+        title="Voltar para home"
+        >
           <S.BrandContainer>
             <Avatar/>
             <S.BrandTitle>André L. Silveira</S.BrandTitle>
           </S.BrandContainer>
+        </AniLink>
           <Menu/>
       </S.HeaderMain>
         </Container>
