@@ -6,12 +6,13 @@ export const Footer = styled.footer.attrs({
   display:flex;
   align-items:center;
   justify-content:center;
-  height:4rem;
+  height:var(--footer);
   position:fixed;
-  left:0;
-  right:0;
+  left:-40px;
+  top:50%;
+  transform:rotate(90deg);
   bottom:0;
   z-index:99;
-  background:linear-gradient(to right, rgba(255,0,0,0), var(--borders));
+  background:var(--white);
   box-shadow: 2px 3px 4px gray;
 `;

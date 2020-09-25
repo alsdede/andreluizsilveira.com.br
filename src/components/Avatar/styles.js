@@ -8,12 +8,12 @@ export const Avatar = styled(Img).attrs({
 })`
   border-radius:50%;
   display:block;
-  height:4.8rem;
-  width:4.8rem;
+  height: var(--headerMedium);
+  width: var(--headerMedium);
   object-fit:cover;
 
   ${media.lessThan('large')`
-    height: 3.2rem;
-    width:  3.2rem;
+    height: var(--headerSmall);
+    width:  var(--headerSmall);
   `}
 `;

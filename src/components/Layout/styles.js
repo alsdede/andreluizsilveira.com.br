@@ -1,12 +1,19 @@
 import styled from 'styled-components';
+import media from 'styled-media-query';
 
 export const LayoutWrapper = styled.section`
   display:flex;
 `;
 
 export const LayoutMain = styled.main`
-  background: var(--background);
+  background: var(--white);
   min-height: 100vh;
-  padding: 0 3.75rem 0 20rem;
+  margin-top:var(--headerLarge);
+  margin-bottom:var(--footer);
+  padding-top:3.2rem;
+  padding-bottom:9.6rem;
   width: 100%;
+  ${media.lessThan('large')`
+    height: var(--headerSmall);
+  `}
 `;

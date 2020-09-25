@@ -4,7 +4,7 @@ export const Menu = styled.div`
   display:flex;
   > a {
     position:relative;
-    color:var(--white);
+    color:var(--black);
     align-items:center;
     display:inline-flex;
     font-size:var(--large);
