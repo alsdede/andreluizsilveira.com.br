@@ -21,12 +21,12 @@ const SocialLinks = () => {
   )
   return(
     <S.SocialWrapper>
-      {<S.SocialItem
+      {/**<S.SocialItem
         href={site.siteMetadata.social.twitterLink}
         title="Twitter"
         >
         <S.SocialTwitter />
-      </S.SocialItem>}
+      </S.SocialItem>*/}
       <S.SocialItem
         href={site.siteMetadata.social.githubLink}
         title="Github"

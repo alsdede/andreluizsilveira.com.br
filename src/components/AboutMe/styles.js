@@ -14,7 +14,6 @@ const Icon = css`
     transition:color 0.2s;
     &:hover {
     color:var(--highlight);
-
   }
   }
 `
@@ -68,18 +67,26 @@ export const Description = styled.p`
 `;
 export const SocialContainer = styled.div`
   display:flex;
-  align-items:center;
-  justify-content:space-between;
+  flex-direction:column;
   margin-top:2rem;
   ${media.lessThan('large')`
     flex-direction:column;
     align-items:center;
+    margin-top:3rem;
     `}
 `;
 export const SocialTitle = styled.span`
   margin-top:1rem;
   font-size:var(--large);
   color:var(--background);
+`;
+export const SocialItemWrapper = styled.div`
+  display:flex;
+  justify-content:space-between;
+  ${media.lessThan('large')`
+    flex-direction:column;
+    align-items:center;
+    `}
 `;
 export const SocialItem = styled.a`
   display:flex;
@@ -174,17 +181,23 @@ export const SkillItem = styled.a`
 export const SkillImageWrapper = styled.div`
   display:flex;
   justify-content:flex-end;
+  height:30rem;
   ${media.lessThan('large')`
     justify-content:center;
     `}
 `;
 export const SkillImage = styled.div`
     margin-top:-40px;
-    height:20rem;
-    width:50%;
+    height:30rem;
+    width:100%;
     background-image:url(${Image});
     background-size: cover;
     z-index:90;
     box-shadow: 0 4px 2px -2px rgba(0,0,0,0.31);
+    ${media.lessThan('large')`
+
+    width:100%;
+
+    `}
 `;
 

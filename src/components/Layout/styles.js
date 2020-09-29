@@ -3,6 +3,7 @@ import media from 'styled-media-query';
 
 export const LayoutWrapper = styled.section`
   display:flex;
+  position:relative;
 `;
 
 export const LayoutMain = styled.main`

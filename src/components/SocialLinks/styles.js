@@ -11,9 +11,10 @@ const Icon = css`
 
 export const SocialWrapper = styled.div`
   display: flex;
+  flex-direction:column;
   background:var(--background);
-  border-top-right-radius:8px;
-  border-top-left-radius:8px;
+  border-top-right-radius:10px;
+  border-bottom-right-radius:10px;
 `
 
 export const SocialItem = styled.a.attrs(props => ({
