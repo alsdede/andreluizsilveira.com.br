@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
+import media from 'styled-media-query'
 import ImageCard from '../../images/desert.jpg'
 import ImageCard2 from '../../images/andre.png'
 export const ProjectList = styled.section`
@@ -8,7 +9,7 @@ export const ProjectList = styled.section`
 `;
 
 export const ProjectCard = styled.div`
-    display: flex;
+   display: flex;
    flex-direction:column;
    justify-content:center;
    max-width:25rem;
@@ -20,12 +21,18 @@ export const ProjectCard = styled.div`
    transition: all 300ms;
     &:hover{
     transform:scale(1.1);
-    
+
     }
+
+    ${media.lessThan('large')`
+      width:100%;
+      max-width:100%;
+
+    `}
 `;
-export const ProjectItem = styled.div`  
+export const ProjectItem = styled.div`
   display:block;
-  
+
 `
 export const WrapperImage = styled.div`
 `;
@@ -38,7 +45,7 @@ export const ProjectItemImage = styled.div`
     max-width:300px;
     height:200px;
     z-index:9;
-   
+
 `
 export const ProjectItemImage2 = styled.div`
     content:'';
@@ -56,7 +63,7 @@ export const ProjectItemImage2 = styled.div`
       }
 `;
 export const ProjectItemTitle = styled.h1`
-  font-size:2.8rem; 
+  font-size:2.8rem;
 `
 export const ProjectItemDescription = styled.p`
   font-size:1.4rem;

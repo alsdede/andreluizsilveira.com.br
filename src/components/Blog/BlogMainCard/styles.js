@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from 'styled-media-query'
 import backgroundImg from '../../../images/desert.jpg';
 import profile from '../../../images/profile.png';
 
@@ -9,7 +10,10 @@ export const BlogWrapper = styled.section`
   min-height:50rem;
 
   padding:2rem;
-  
+  ${media.lessThan('large')`
+      width:100%;
+    `}
+
 `;
 export const BackgroundContainer = styled.div`
   display:flex;
@@ -25,13 +29,13 @@ export const ContainerWrapper = styled.div`
   padding:2rem;
   max-width:85%;
   border-radius:1px;
-  box-shadow: -1px 1px 2px 0 rgba(0,0,0,.25); 
+  box-shadow: -1px 1px 2px 0 rgba(0,0,0,.25);
   position:absolute;
   bottom:-2px;
   left:-2px;
- 
-  
-  
+
+
+
 `;
 export const Title = styled.h1`
   font-size:3rem;
@@ -42,7 +46,7 @@ export const ContainerInfo = styled.div`
   display:flex;
   align-items:center;
   justify-content:space-between;
-  
+
 `;
 export const AuthorWrapper = styled.div`
   display:flex;
@@ -56,7 +60,7 @@ export const Avatar = styled.div`
   margin-top:1rem;
   background-image:url(${profile});
   background-size: cover;
-  
+
 `
 
 ;

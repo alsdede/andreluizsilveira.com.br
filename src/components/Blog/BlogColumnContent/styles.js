@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import media from 'styled-media-query'
 import backgroundImg from '../../../images/desert.jpg';
 import profile from '../../../images/profile.png';
 
@@ -6,19 +7,22 @@ import profile from '../../../images/profile.png';
 export const ColumnWrapper = styled.div`
   display:flex;
   flex-direction:column;
-  width:33.3%; 
+  width:33.3%;
   max-height:50rem;
   justify-content:space-between;
-  
-  
+  ${media.lessThan('large')`
+      margin-top:5rem;
+      width:100%;
+    `}
+
 `;
 
 export const PostItem = styled.div`
-  display:flex;  
-  padding:2rem 2rem;  
+  display:flex;
+  padding:2rem 2rem;
   height:auto;
   max-height:20rem;
- 
+
 `;
 
 export const BackgroundImage = styled.div`
@@ -38,13 +42,13 @@ export const PostInfo = styled.div`
 export const PostDate = styled.div`
   display:flex;
   align-items:center;
-  
+
   padding:0.5rem;
   justify-content:space-between;
 `;
 
 export const CategoryWrapper = styled.div`
- 
+
 `;
 export const Category = styled.span`
 position:relative;
@@ -78,16 +82,16 @@ export const AuthorWrapper = styled.div`
   display:flex;
   margin-top:auto;
   align-items:center;
-  
+
 `;
 export const Avatar = styled.div`
   height:3rem;
   width:3rem;
   background-image:url(${profile});
-  background-size: cover; 
+  background-size: cover;
   border-radius:50%;
- 
-  
+
+
 `;
 export const Name = styled.div`
   margin-left:1rem;

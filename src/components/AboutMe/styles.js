@@ -1,5 +1,6 @@
 import styled,{ css } from 'styled-components';
 import Image from '../../images/andre.png';
+import media from 'styled-media-query'
 import {LinkedinSquare} from '@styled-icons/boxicons-logos/LinkedinSquare'
 import { Github } from '@styled-icons/boxicons-logos/Github'
 
@@ -13,12 +14,18 @@ const Icon = css`
     transition:color 0.2s;
     &:hover {
     color:var(--highlight);
-    
+
   }
   }
 `
 export const AboutWrapper = styled.div`
 display:flex;
+
+  ${media.lessThan('large')`
+    flex-direction:column;
+    align-items:center;
+    `}
+
 
 `;
 export const AboutInfo = styled.div`
@@ -27,6 +34,9 @@ padding:2rem;
 
 flex-direction:column;
 max-width:50%;
+${media.lessThan('large')`
+    max-width:100%;
+    `}
 `;
 export const Title = styled.h1`
   font-size:22px;
@@ -42,7 +52,7 @@ export const Title = styled.h1`
 export const SubTitle = styled.h3`
   font-size:20px;
   color:#666;
-  
+
 `;
 export const Description = styled.p`
   margin-top:20px;
@@ -61,6 +71,10 @@ export const SocialContainer = styled.div`
   align-items:center;
   justify-content:space-between;
   margin-top:2rem;
+  ${media.lessThan('large')`
+    flex-direction:column;
+    align-items:center;
+    `}
 `;
 export const SocialTitle = styled.span`
   margin-top:1rem;
@@ -76,7 +90,7 @@ export const SocialItem = styled.a`
 
   &:hover {
     color:var(--highlight);
-    
+
   }
 `;
 
@@ -93,6 +107,7 @@ display:flex;
 flex-direction:column;
 flex:1;
 max-width:50rem;
+padding:2rem;
 
 `;
 export const SkillsBoard = styled.div`
@@ -119,14 +134,14 @@ export const SkillRow = styled.div`
 export const SkillItemWrapper = styled.div`
   display:flex;
   margin-top:15px;
-  
+
   position:relative;
   background:var(--background);
 
   align-items:center;
   justify-content:center;
   box-shadow: 0px -1px 6px 1px rgba(255,255,255,0.15);
-  
+
   flex-wrap:wrap;
   padding:1rem;
   transition:transform 0.1s ease-in-out;
@@ -134,9 +149,9 @@ export const SkillItemWrapper = styled.div`
   &:hover {
     transform: scale(1.2);
     z-index:10;
-   
+
   }
-  
+
 `;
 export const SkillDot = styled.div`
   position:absolute;
@@ -158,7 +173,10 @@ export const SkillItem = styled.a`
 
 export const SkillImageWrapper = styled.div`
   display:flex;
-  justify-content:flex-end; 
+  justify-content:flex-end;
+  ${media.lessThan('large')`
+    justify-content:center;
+    `}
 `;
 export const SkillImage = styled.div`
     margin-top:-40px;
@@ -166,7 +184,7 @@ export const SkillImage = styled.div`
     width:50%;
     background-image:url(${Image});
     background-size: cover;
-    z-index:90;    
+    z-index:90;
     box-shadow: 0 4px 2px -2px rgba(0,0,0,0.31);
 `;
 
