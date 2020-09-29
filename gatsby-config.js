@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `André Luiz Silveira`,
     position:'Desenvolvedor Front-end',
-    description: `Front-end e outras coisas legais`,
+    description: `Front-end e Tecnologias`,
     author: `@alsdede`,
     siteUrl:'https://andreluizsilveira.com.br',
     social: {
@@ -42,9 +42,9 @@ module.exports = {
       options: {
         name: `gatsby-starter-default`,
         short_name: `starter`,
-        start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        start_url: `/about`,
+        background_color: `#06092B`,
+        theme_color: `#06092B`,
         display: `minimal-ui`,
          // This path is relative to the root of the site.
       },
