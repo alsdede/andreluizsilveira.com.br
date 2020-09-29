@@ -9,16 +9,14 @@ const ProjectItem = () => {
       <S.ProjectItem>
       <S.ProjectCard>
         <S.WrapperImage>
-          <S.ProjectItemImage>
-          <S.ProjectItemImage2/>
+          <S.ProjectItemImage/>
 
-          </S.ProjectItemImage>
         </S.WrapperImage>
-        
-        <S.ProjectItemTitle>Meu blog</S.ProjectItemTitle>
+
+        <S.ProjectItemTitle>Meu site</S.ProjectItemTitle>
         <S.ProjectItemDescription>Este blog foi desenvolvido com Gatsby JS, React JS, Styled Components e Netlify CMS</S.ProjectItemDescription>
-      </S.ProjectCard>   
-  
+      </S.ProjectCard>
+
       </S.ProjectItem>
     </S.ProjectList>
   )

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import media from 'styled-media-query'
-import ImageCard from '../../images/desert.jpg'
-import ImageCard2 from '../../images/andre.png'
+import ImageCard from '../../images/blog.png'
+
 export const ProjectList = styled.section`
   display:flex;
   justify-content:center;
@@ -12,7 +12,7 @@ export const ProjectCard = styled.div`
    display: flex;
    flex-direction:column;
    justify-content:center;
-   max-width:25rem;
+   max-width:auto;
    padding:2.6rem;
    border-radius:6px;
    background:#f9f9f9;
@@ -42,7 +42,7 @@ export const ProjectItemImage = styled.div`
     margin-bottom: 2.4rem;
     background-image:url(${ImageCard});
     background-size: cover;
-    max-width:300px;
+    max-width:auto;
     height:200px;
     z-index:9;
 
@@ -50,7 +50,7 @@ export const ProjectItemImage = styled.div`
 export const ProjectItemImage2 = styled.div`
     content:'';
       position:absolute;
-      background:url(${ImageCard2}) no-repeat center;
+      background:url(${ImageCard}) no-repeat center;
       top:0;
       right:0;
       bottom:0;

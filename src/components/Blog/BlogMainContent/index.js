@@ -7,8 +7,10 @@ import * as S from './styles'
 const BlogMainContent = () => {
   return(
     <S.BlogWrapper>
-      <BlogMainCard/>
-      <BlogColumnCard/>
+        <S.AlertBackground><S.AlertMes>EM CONSTRUÇÃO!</S.AlertMes></S.AlertBackground>
+        <BlogMainCard/>
+        <BlogColumnCard/>
+
     </S.BlogWrapper>
   )
 }

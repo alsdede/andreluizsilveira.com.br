@@ -6,8 +6,8 @@ import ProjectItem from "../components/ProjectItem"
 const Projetos = () => {
   return (
     <Layout>
-    <SEO title="Projetos" />  
-    <ProjectItem/>   
+      <SEO title="Projetos" />
+      <ProjectItem/>
   </Layout>
 
   )

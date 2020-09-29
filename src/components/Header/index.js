@@ -5,19 +5,21 @@ import Container from '../Container'
 import Menu from '../Menu'
 import * as S from './styles'
 
+
 const Header = () => {
+
   const [border,setBorder] = useState('');
   const handleScroll=()=>{
     if (window.pageYOffset > 10) {
         if(!border){
-          setBorder("0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06)");   
+          setBorder("0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06)");
         }
     }else {
       if(border){
-        setBorder("");   
+        setBorder("");
       }
     }
-   
+
   }
   useEffect(()=>{
     window.addEventListener("scroll",handleScroll);
