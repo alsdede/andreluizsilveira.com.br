@@ -188,7 +188,7 @@ export const SkillImageWrapper = styled.div`
 `;
 export const SkillImage = styled.div`
     margin-top:-40px;
-    height:30rem;
+    height:20rem;
     width:100%;
     background-image:url(${Image});
     background-size: cover;
